@@ -4,11 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+  
 </head>
 <body>
-    <article>
-        <h1> wwf</h1>
-        <p> wwf prevent killing plants </p>
-    </article>
+
+  <div class="site-container">
+    <button class="menu-button jstoggle">
+      <span>Menu</span>
+    </button>
+
+    <h1>Click on the button</h1>
+  </div>
+
+  <div class="offsite-container">
+    <nav class="nav">
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Work</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <style>
+   
+
+
+body {
+  background-color:olivedrab;
+  color: blueviolet;
+}
+
+h1 {
+  margin-top: 3rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+
+
+.site-container {
+  padding-top: 3rem;
+  padding-left: 2.5rem;
+  max-width: 33rem;
+}
+
+.offsite-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -14rem;
+  width: 14rem;
+  background-color: gray;
+}
+
+.offsite-is-open .site-container,
+.offsite-is-open .offsite-container {
+  transform: translateX(14rem);
+}
+
+
+.menu-button > * {
+  display: block;
+  pointer-events: none;
+}
+
+.nav {
+  margin-top: 8rem;
+}
+
+.nav a {
+  display: block;
+  margin: 0;
+  padding: 0.5rem 3rem;
+}
+  </style>
+  <script src="./index.js"></script>
 </body>
 </html>
+ 
